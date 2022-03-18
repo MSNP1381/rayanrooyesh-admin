@@ -1,0 +1,7 @@
+{
+  "name": "rayanrooyesh-admin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
