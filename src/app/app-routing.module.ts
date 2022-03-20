@@ -21,7 +21,7 @@ const routes: Routes = [
     loadChildren: () => import('./total-transactions/total-transactions.module').then( m => m.TotalTransactionsPageModule)
   },
   {
-    path: 'team-transactions/:id',
+    path: 'team-transactions',
     loadChildren: () => import('./team-transactions/team-transactions.module').then( m => m.TeamTransactionsPageModule)
   },
 ];

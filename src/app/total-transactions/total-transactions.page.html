@@ -1,9 +1,30 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>totalTransactions</ion-title>
+      <ion-buttons slot="end">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+    <ion-title>تراکنش های کلی</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <!-- {{transactions|json}} -->
+<table class="table table-striped">
+  <thead>
+  <tr>
+  <th>#</th>
+  <th>ای دی تیم</th>
+  <th>actionId</th>
+  <th>مقدار</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let i of transactions">
+  <td>{{i.id}}</td>
+  <td>{{i.team_id}}
+  <td>{{i.actionId|transactionId2Str}}</td>
+  <td style="direction:ltr">{{i.withdrawAmount}}</td>
+</tr>
+</tbody>
+</table>
 </ion-content>

@@ -1,17 +1,22 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>ranking</ion-title>
+      <ion-buttons slot="end">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+    <ion-title>رنکینگ</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-{{rankings|json}}
-  <table class="table table-striped">
+<!-- {{rankings|json}} -->
+  <table class="table striped">
     <tr>
+      <th>#</th>
       <th>ای دی تیم</th>
       <th>مقدار</th>
     </tr>
     <tr *ngFor="let i of rankings">
+      <td>{{i.id}}</td>
       <td>{{i.team_id}}</td>
       <td>{{i.withdrawAmount}}</td>
     </tr>

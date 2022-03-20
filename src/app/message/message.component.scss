@@ -11,20 +11,9 @@ ion-label {
 ion-item h2 {
   font-weight: 600;
   margin: 0;
+  font-family: x1;
 }
 
-ion-item p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 95%;
-}
-
-ion-item .date {
-  float: right;
-  align-items: center;
-  display: flex;
-}
 
 ion-item ion-icon {
   color: #c9c9ca;

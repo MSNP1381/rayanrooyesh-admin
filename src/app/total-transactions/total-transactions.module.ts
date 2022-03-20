@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { TotalTransactionsPageRoutingModule } from './total-transactions-routing.module';
 
 import { TotalTransactionsPage } from './total-transactions.page';
+import {TransactionId2StrPipe}from './custom.pipe'
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { TotalTransactionsPage } from './total-transactions.page';
     IonicModule,
     TotalTransactionsPageRoutingModule
   ],
-  declarations: [TotalTransactionsPage]
+  declarations: [TotalTransactionsPage,TransactionId2StrPipe]
 })
 export class TotalTransactionsPageModule {}
